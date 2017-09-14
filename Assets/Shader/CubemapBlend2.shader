@@ -1,9 +1,9 @@
-﻿Shader "TFTM/Skybox2CubeBlend" {
+﻿Shader "TFTM/Skybox/Cube2Blend" {
 Properties {
 	_Blend ("Blend", Range (0, 1) ) = 0.0
 	_Rotation ("Rotation", Range(0, 360)) = 0
-    _Tex ("Cubemap   (HDR)", Cube) = "grey" {}
-	_OverlayTex ("CubemapOverlay (HDR)", Cube) = "grey" {}
+    [NoScaleOffset] _Tex ("Cubemap   (HDR)", Cube) = "grey" {}
+	[NoScaleOffset] _OverlayTex ("CubemapOverlay (HDR)", Cube) = "grey" {}
 }
 
 SubShader {
